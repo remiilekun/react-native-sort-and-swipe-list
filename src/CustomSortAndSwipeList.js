@@ -131,7 +131,7 @@ class CustomSortAndSwipeList extends Component {
           // should not be changed by passing in different props.
           renderRow={this.renderRow} //not a prop. split into props for myRow.
           manuallyActivateRows //not a prop.
-          scrollEnabled={this.state.scrollEnabled} //not a prop.
+          // scrollEnabled={this.state.scrollEnabled} //not a prop.
           onActivateRow={null} // NOT USED
           onPressRow={null} //NOT USED, use general prop onRowPress instead.
         />

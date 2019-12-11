@@ -143,7 +143,12 @@ class MyRow extends Component {
             style={this.props.rowStyle}
           >
             <View style={this.props.rowStyle}>
-              {this.props.renderRow(this.props.data)}
+              {this.props.renderRow({
+                data: this.props.data,
+                key: this.props.myKey,
+                index: this.props.rowId,
+                active: this.props.active
+              })}
             </View>
           </TouchableOpacity>
         </Animated.View>
